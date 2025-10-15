@@ -2,7 +2,7 @@
  body {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
       /* color: #fff; */
@@ -31,11 +31,7 @@
     .navbar ul {
       list-style: none;
     }
-    /* .navbar nav { */
-      background-color: #007bff;
-      height: 70px;
-      color: #fff;
-  }
+
 
   
     h6 {
@@ -69,11 +65,7 @@
         font-size: 20px;
         font-weight: bold;
     }
-    form {
-      background-color: #c8cb13;
-      padding: 30px 40px;
-      border-radius: 8px;
-    }
+    
     table {
       color: #000;
       background-color: crimson;
@@ -118,36 +110,31 @@
     }
 /* Dashboard Flexbox Styles */
 .card-container {
-
-  /* gap: 16px; */
-  /* justify-content: center; */
-  margin-bottom: 0 auto;
-  max-width: 1100px;
-  padding: 0 40px;
-  overflow: auto;
-  }
+  display: flex;
+  gap: 20px; 
+  padding: 20px;
+  justify-content: flex-start;
+}
 
 .card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  padding: 20px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
-  justify-content: center;
   display: flex;
-
-  /* display: flex; */
-  flex-direction:column;
-  /* align-items: center; */
-  color: #007bff;
-  font-size: 20px;
-  margin: 10px;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 
 .card p {
   color: #555;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 
@@ -176,12 +163,6 @@
 }
 
 
-.forms {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .navbar2 nav{
   
       background-color: #c8ff00;
@@ -203,4 +184,20 @@
       padding: 15px 50px;
       height: 70px;
       color: #fff;
+}
+
+/* login flexbox styles */
+.form1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+
+
 }
