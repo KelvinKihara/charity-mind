@@ -163,7 +163,7 @@
 }
 
 
-.navbar2 nav{
+/* .navbar2 nav{ */
   
       background-color: #c8ff00;
       display: flex;
@@ -190,7 +190,7 @@
 .form1 {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: end;
   padding: 20px;
 }
 
