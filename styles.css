@@ -188,10 +188,14 @@
 
 /* login flexbox styles */
 .form1 {
-  display: flex;
+  display: block;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   padding: 20px;
+ background-color: #578ae3;
+ text-align: center;
+ border: 20px solid #c8cb13;
+
 }
 
 form {
