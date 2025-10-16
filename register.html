@@ -21,13 +21,14 @@
                     <li><a href="dashboard.html">Dashboard</a></li>
                 </ul>
             </nav>
+      <div class="form2">
     <h1>Register</h1>
 
     <form="/register" method="post">
-          <div class="forms">
+          <!-- <div class="forms"> -->
 
 
-        
+        <div>
         <label for="firstname">First name</label>
         <input type="firstname" id="firstname"name="firstname" required />
         </div>
@@ -52,32 +53,33 @@
           <input type="date" id="birthdate" name="birthdate" required />
           </div>
 
-         
+         <div>
           <label>Gender:</label>
 
           
           <input type="radio" id="male" name="gender" value="male" >
           <label for="male">Male</label>
-
-           
+        
           <input type="radio" id="female" name="gender" value="female">
            <label for="female">Female</label>
-
+        
            
+        
            <input type="radio" id="other" name="gender" value="other">
            <label for="other">Other</label>
+         </div>
 
-           <label="password">Password</label>
-           <input type="password" id="password"name="password" >
-
+        
            
-
+          <div>
             <button type="submit"> Register</button>
+
+            <p>Already have an account? <a href="/login.html">Log In</a></p>
+
             </div>
 
     </form>
-    <p>Already have an account? <a href="/login.html">Log In</a></p>
-
+    
   </body>
     </html>
     

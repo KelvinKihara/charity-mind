@@ -23,6 +23,7 @@
       padding: 15px 50px;
       height: 70px;
       color: #fff;
+      width: 100%;
     }
 
     .navbar a {
@@ -188,20 +189,56 @@
 
 /* login flexbox styles */
 .form1 {
-  display: block;
+  width: 300px;
+  /* display: block; */
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
+  border-radius: 8px;
  background-color: #578ae3;
  text-align: center;
- border: 20px solid #c8cb13;
+ /* border: 20px solid #c8cb13; */
+   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+   margin-top: 10px;
+}
+
+.form1 h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.form1 input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+} 
+
+.form1 button {
+  width: 100%;
+  padding: 6px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+
+}
+/* register styles */
+.form2 {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  background-color: #578ae3;
+  border: 8px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 500px;
 
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-
-
-
+.form2 label{
+display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
