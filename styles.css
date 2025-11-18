@@ -5,8 +5,10 @@
   align-items: center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
-      /* color: #fff; */
-      /* height: 100%; */
+     
+      @media screen {
+      
+      }
     }
     *{
        margin: 0px;
@@ -15,44 +17,42 @@
 
     }
     nav {
+      
       list-style: none;
       background-color: #007bff;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      /* padding: 15px 50px; */
-      /* padding: 0; */
-      /* margin: 0; */
-      height: 70px;
-      color: #fff;
-      /* width: 100%; */
-      width: calc(100%);
-      /* position: relative; */
+      padding: 15px 50px;
+      height: auto;
+      color: #f4f0f1;
+      position: relative;
     }
 
-    .navbar{
+    .navbar {
       width: 100%;
-
     }
+
+    @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }
 
     .navbar a {
-      color: #fff;
+      color: #3cf021;
     }
     .navbar ul {
       list-style: none;
     }
-
-    .post {
-      min-height: calc(100%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.logo-div{
+  display: flex;
+  flex-direction: row;
+}
 
 
-  
     h6 {
-      margin-left: 60px;
       padding: 0px 20px;
       /* align-items: center; */
       font-size:25px;
@@ -85,7 +85,7 @@
     
     table {
       color: #000;
-      /* background-color: crimson; */
+      background-color: crimson;
 
     }
     h5 {
@@ -127,31 +127,27 @@
     }
 /* Dashboard Flexbox Styles */
 .card-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
 }
 
 .card {
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  padding: 16px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    background-color: #b3d1ee;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
 
 .card:hover {
       transform: translateY(-15px);
-       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -162,50 +158,11 @@
 }
 
 img {
-  height: 100%;
+  width: 80px;
 }
-/* mobile effect
-@media (max-width: 768px) {
-  .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 15px;
-  }
 
-  .card {
-    padding: 20px;
-  }
 
-  .card h4 {
-    font-size: 1.6rem;
-  }
-} */
-
-/* Mobile view */
-/* @media (max-width: 480px) {
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-  }
-
-  .card {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .card h4 {
-    font-size: 1.5rem;
-  }
-
-  .card p {
-    font-size: 0.95rem;
-  }
-} */
- 
-/* table content */
 .section.table {
-  max-width: 100%;
   margin-top: 2rem;
   overflow-x: auto;
 }
@@ -259,7 +216,7 @@ img {
   /* display: block; */
   justify-content: center;
   align-items: center;
-  padding: 30px 40px;
+  padding: 30px;
   border-radius: 8px;
  background-color: #578ae3;
  text-align: center;
@@ -267,7 +224,6 @@ img {
    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
    margin-top: 10px;
    color: #fff;
-   text-align: left;
 }
 
 .form1 h2 {
@@ -298,12 +254,11 @@ img {
   display: block;
   text-align: center;
   align-items: center;
-  background-color: #578ae3;
+  background-color: #c3d3eed8;
   border: 8px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  width: 500px;
-
+  width: 100%
 }
 
 .form2 label{
@@ -311,9 +266,4 @@ display: block;
   margin-top: 10px;
   margin-bottom: 5px;
   color: #fff;
-}
-footer{
-  text-align: center;
-  background-color: #578ae3;
-  position
 }
